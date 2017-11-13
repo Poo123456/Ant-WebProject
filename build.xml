@@ -67,4 +67,16 @@
 		<delete dir="${work.home}" />
 	</target>
 	
+	
+	<target name="deploy" depends="ear">
+    <sequential>
+        <antcall target="tomcat-stop"/>
+            <echo>Deploy to server</echo>
+            <copy todir="localhost:8085">
+                <fileset dir="${build.dir}"/>
+            </copy>
+        <antcall target="tomcat-start"/>
+    </sequential>
+</target>
+	
 </project>
