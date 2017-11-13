@@ -7,8 +7,6 @@ pipeline {
                 sh 'ant'
             }
             }
-        }
-    stages {
         stage('Deploy') {
             steps {
                 echo 'Deploying'
@@ -16,5 +14,7 @@ pipeline {
                 sh 'cd C:/Users/saket.i.kumar/Downloads/Tomcat/apache-tomcat-8.5.23-windows-x64/apache-tomcat-8.5.23/bin/startup.sh'
             }
             }
+        
+        
         }
-}
+}	
