@@ -10,8 +10,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying'
-                sh 'cp C:/Users/saket.i.kumar/.jenkins/workspace/AntGit_Jenkinsfile_Web/dist/SampleAntProject.ear C:/Users/saket.i.kumar/Downloads/Tomcat/apache-tomcat-8.5.23-windows-x64/apache-tomcat-8.5.23/webapps'
-                sh 'C:/Users/saket.i.kumar/Downloads/Tomcat/apache-tomcat-8.5.23-windows-x64/apache-tomcat-8.5.23/bin/startup.sh'
+                sh 'cp C:/Users/saket.i.kumar/.jenkins/workspace/AntGit_Jenkinsfile_Web/dist/SampleAntProject.ear C:/Users/saket.i.kumar/Downloads/apache-tomcat-7.0.82/apache-tomcat-7.0.82/webapps'
+                sh 'C:/Users/saket.i.kumar/Downloads/apache-tomcat-7.0.82/apache-tomcat-7.0.82/bin/startup.sh'
             }
             }
         
