@@ -5,6 +5,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'ant'
+                echo 'Built ant'
             }
             }
         stage('Deploy') {
